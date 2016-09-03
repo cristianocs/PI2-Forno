@@ -24,63 +24,114 @@ Os tijolos utilizados para tal construção possuem dimensões de 350 x 150 x 60
 
 \begin{figure}[h]
 	\centering
-	\label{tebela_dimensoes}
+	\label{tabela_dimensoes}
 	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/tabela_dimensoes.JPG}
 	\caption{Características físicas e químicas do material.}
 \end{figure}
 
-\section{Material de Isolamento}
+\subsection{Definindo alguns parâmetros de medida dentro do forno para definir os requisitos não funcionais}
 
-Notas eventualmente necessárias devem ser numeradas de forma seqüencial ao 
-longo do texto no formato 1, 2, 3... sendo posicionadas no rodapé de cada 
-página na qual a nota é utilizada.\footnote{Como, por exemplo, esta nota}
+Como ponto de partida, foi considerado um forno pequeno para o tratamento térmico de um corpo de prova de aço. Este corpo de prova será submetido a uma temperatura de 1200 ºC, afim de se introduzir a martensita em sua estrutura, que é responsável pelo endurecimento e aumento da rigidez na estrutura do aço.
+
+Para o forno térmico, será então calculado algumas propriedades técnicas de funcionamento do forno, a espessura do isolante térmico selecionado, a temperatura máxima de operação da parede interna, onde as resistências serão instaladas, a temperatura máxima nas paredes sem a fonte de calor instalada, ou seja, várias incógnitas muito importantes na hora da montagem do produto
+
+A seguir é apresentado em uma tabela algumas constantes consideradas para a primeira análise dessas propriedades. Na qual estão presentes alguns valores necessário para o cálculo das propriedades previstas no parágrafo anterior.
+
+\begin{figure}[h]
+	\centering
+	\label{tab_constantes}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/tab_constantes.JPG}
+	\caption{Tabela de propriedades técnicas.}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\label{vol_interno}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/vol_interno.JPG}
+	\caption{Dados do Volume Interno do Forno.}
+\end{figure}
+
+A imagem acima retrada o dimensionamento interno escolhido pelo grupo de trabalho, onde A3 será a entrada do forno e terá área igual ao fundo, A1 e A2 são os lados, base e fundo respectivamente. 
+
+\section{Cálculo da distribuição de temperatura no interior do forno}
+
+Nesta seção será tratado sobre os mecanismos básicos da condução de calor, convecção e condução. Estes ocorrem dentro do forno, através principalmente pela diferença de temperatura entre o interior do forno e o meio ambiente, que geram um fluxo de calor na direção do mais quente para o mais frio.
+
+O cálculo desse fluxo de calor por meio da condução e convecção se dá pelas seguintes fórmulas.
+
+
+************************
+
+
+
+\begin{figure}[h]
+	\centering
+	\label{dist_temperatura}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/dist_temperatura.JPG}
+	\caption{Distribuição da temperatura ao longo de um material.}
+\end{figure}
+
+Com isso tudo esclarecido será calculado a temperatura nas paredes internas no forno e as espessuras da camada isolante do forno, considerando os materiais escolhidos (Tijolo refratário e o aço carbono).
+
+Considerando o primeiro trecho, partindo do interior com 1200ºC até a parede interna com as resistências instaladas, a fórmula para o cálculo da temperatura, será apresentado logo a seguir.
+
+Foi considerado as paredes laterais do forno, a base e o topo como tendo resistências, a temperatura nessas paredes, em A1 e A2 será a seguinte.
+
+
+
+****************************
+
+
+
+Além disso foi considerado que as resistências estão igualmente espaçadas nas 4 paredes, ou seja, a potência também será dividida e sendo considerada como 750 W em A1 e A2.
+
+
+******************************
+
+
+As temperaturas nas superfícies A3 (forno e porta), serão consideradas, iguais as temperaturas de operação do forno, para se adquirir um sobre dimensionamento da espessura requerida para os tijolos refratários, então T3 será igual a 1200 ºC. Em outras palavras, foi considerado que não há problema algum de isolamento no fundo e na porta do forno, ou seja, nenhuma energia estaria se dissipando.
+
+Com as temperaturas nas paredes bem definidas, é possível calcular a transferência de calor nos tijolos refratários e nas placas de aço carbono, considerando apenas o fenômeno da condução.
+
+
+
+*********************
+
+
+
+ A única variável são as áreas que dependem da seção analisada e a espessura do tijolo. Por vias de uma segurança maior nos cálculos, serão considerados a temperatura na placa externa igual a temperatura no meio ambiente de 27ºC. A equação simplificada para obter Lt é a seguinte.
+ 
+ 
+ 
+ ***********************
+ 
+ 
+ 
+ 
+Os cálculos com os subscritos x, são correspondentes com as seções analisadas. Cada uma delas com uma área e diferença de temperaturas diferentes, e consequentemente terão espessuras requeridas diferentes. A Potência correspondente para cada seção será novamente de 750 W devido a uma divisão homogênea dos resistores nas seções consideradas.
+ 
+ 
+***********************
+
+
+\begin{figure}[h]
+	\centering
+	\label{tab}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/tab.JPG}
+	\caption{Cálculo das variáveis de temperatura interna do forno.}
+\end{figure}
+
+As espessuras requeridas para o tijolo refratário selecionado, foram calculadas. Este caso não leva em conta a dissipação de calor entre os tijolos. Afim de se ter tal valor, seria necessária fazer uma análise mais apurada experimentalmente ou numericamente.
+Devido a todos os tipos de perdas de calor que possam ocorrer, é necessário um fator de segurança nessas espessuras obtidas. 
+
+Além disso pode ser acrescentado algum material isolante entre os tijolos e as placas externas de aço, como a vermiculita.
+Por fim, também tem os sulcos que serão feitos nos tijolos para o encaixe das resistências, este fator acarretara uma perca de material refratário, sendo necessário por fins de segurança, um aumento das espessuras calculadas.
+
+ 
+\section{Material de Isolamento}
 
 
 \section{Cálculo das Resistências}
-
-As figuras devem ser centradas entre margens e identificadas por uma legenda 
-alinhada a esquerda com recuo especial de deslocamento de 1,8 cm, com mostrado 
-na Fig. (\ref{fig01}). O tamanho das fontes empregadas nos rótulos e anotações 
-usadas nas figuras deve ser compatível com o usado no corpo do texto. Rótulos e 
-anotações devem estar em português, com todas as grandezas mostradas em 
-unidades do SI (Sistema Internacional de unidades).
-
-Todas as figuras, gráficos e fotografias devem ser numeradas e referidas no 
-corpo do texto adotando uma numeração seqüencial de identificação. As figuras e 
-gráficos devem ser claras e com qualidade adequada para eventual reprodução 
-posterior tanto em cores quanto em preto-e-branco.
-
-As abscissas e ordenadas de todos os gráficos devem ser rotuladas com seus 
-respectivos títulos em português seguida da unidade no SI que caracteriza a 
-grandes entre colchetes. 
-
-A referência explícita no texto à uma figura deve ser feita como 
-\lq\lq Fig. (\ref{fig01})\rq\rq\ quando no meio de uma frase ou como 
-\lq\lq Figura (\ref{fig01})\rq\rq\ quando no início da mesma. Referencias 
-implícitas a uma dada figura devem ser feitas entre parênteses como 
-(Fig. \ref{fig01}). Para referências a mais de uma figura as mesmas regras 
-devem ser aplicadas usando-se o plural adequadamente. Exemplos:
-
-\begin{itemize}
-	\item \lq\lq Após os ensaios experimentais, foram obtidos os resultados 
-	mostrados na Fig. (\ref{fig01}), que ...\rq\rq
-	\item \lq\lq A Figura (\ref{fig01}) apresenta os resultados obtidos, onde 
-	pode-se observar que ...\rq\rq
-	\item \lq\lq As Figuras (1) a (3) apresentam os resultados obtidos, 
-	...\rq\rq
-	\item \lq\lq Verificou-se uma forte dependência entre as variáveis citadas 
-	(Fig. \ref{fig01}), comprovando ...\rq\rq
-\end{itemize}
-
-Cada figura deve ser posicionada o mais próxima possível da primeira citação 
-feita à mesma no texto, imediatamente após o parágrafo no qual é feita tal 
-citação, se possível, na mesma página.
-\begin{figure}[h]
-	\centering
-	\label{fig01}
-		\includegraphics[keepaspectratio=true,scale=0.3]{figuras/fig01.jpg}
-	\caption{Wavelets correlation coefficients}
-\end{figure}
 
 \section{Sistema de Alimentação}
 
@@ -191,23 +242,6 @@ O processo de têmpera é completo após a técnica de resfriamento do material,
 \end{figure}
 
 A variação da taxa de resfriamento entre água e salmoura é de 27,6\% até 110\% e a diminuição do tempo de resfriamento é de 7,8\% até 63,3\% em relação à agitação. Ar e óleo possui uma severidade muito baixa de tempera e salmoura possui uam severidade mais alta que o ideal. Dessa forma o resultado de têmpera com resfriamento em água gera um aumento de 20\% de martensita na estrutura do aço em relação á tratamento com salmoura. (CARVALHO, 2004)
-
-
-\section{Termodinânica}
-
-Referencias a outros trabalhos tais como artigos, teses, relatórios, etc. devem 
-ser feitas no corpo do texto devem estar de acordo com a norma corrente ABNT 
-NBR 6023:2002 (ABNT, 2000), esta ultima baseada nas normas ISO 690:1987:
-\begin{itemize}
-	\item \lq\lq \cite{bordalo1989}, mostraram que...\rq\rq
-
-	\item \lq\lq Resultados disponíveis em \cite{coimbra1978}, \cite{clark1986} 
-	e \cite{sparrow1980}, mostram que...\rq\rq
-\end{itemize}
-
-Para referências a trabalhos com até dois autores, deve-se citar o nome de 
-ambos os autores, por exemplo: \lq\lq \cite{soviero1997}, mostraram 
-que...\rq\rq
 
 \section{Termodinânica}
 
