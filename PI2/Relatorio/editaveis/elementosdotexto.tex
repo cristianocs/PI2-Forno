@@ -1,24 +1,11 @@
 \chapter[Solução Proposta]{Solução Proposta}
 
-\section{Justificativa}
-
-\subsection{Especificação do Corpo de Prova}
-
-\subsection{Tipo de Material}
-
 
 \section{Dimensionamento do Forno}
 
 O forno de tratamento térmico possuirá um volume interno de aproximadamente 8 litros, pois o objetivo é fabricar um forno de tratamento para fins acadêmicos, com corpos de prova segundo a norma ABNT 10611 e componentes mecânicos de pequeno porte, como engrenagens.
  
-A parte externa será compostas por uma estrutura de aço carbono como um chassi de sustentação ao peso do forno bem como todo suporte para materiais elétricos/eletrônicos, esse envoltório também será usado em formato de placas de para cobrir os tijolos expostos ao ambiente externo a fim de proteger contra choque mecânicos, conforme demonstrado no anexo b
-
-\begin{figure}[h]
-	\centering
-	\label{cad}
-	\includegraphics[keepaspectratio=true,scale=0.8]{figuras/cad.JPG}
-	\caption{Protótipo CAD do forno.}
-\end{figure}
+A parte externa será compostas por uma estrutura de aço carbono como um chassi de sustentação ao peso do forno bem como todo suporte para materiais elétricos/eletrônicos, esse envoltório também será usado em formato de placas de para cobrir os tijolos expostos ao ambiente externo a fim de proteger contra choque mecânicos, conforme demonstrado no anexo b.
 
 Os tijolos utilizados para tal construção possuem dimensões de 350 x 150 x 60 (mm) e são próprios para suportar temperaturas superiores a 1200 ºC conforme mostrado na tabela a seguir, concedida pela empresa fornecedora desse material.
 
@@ -33,18 +20,18 @@ Os tijolos utilizados para tal construção possuem dimensões de 350 x 150 x 60
 
 Como ponto de partida, foi considerado um forno pequeno para o tratamento térmico de um corpo de prova de aço. Este corpo de prova será submetido a uma temperatura de 1200 ºC, afim de se introduzir a martensita em sua estrutura, que é responsável pelo endurecimento e aumento da rigidez na estrutura do aço.
 
-Para o forno térmico, será então calculado algumas propriedades técnicas de funcionamento do forno, a espessura do isolante térmico selecionado, a temperatura máxima de operação da parede interna, onde as resistências serão instaladas, a temperatura máxima nas paredes sem a fonte de calor instalada, ou seja, várias incógnitas muito importantes na hora da montagem do produto
+Para o forno térmico, será então calculado algumas propriedades técnicas de funcionamento do forno, a espessura do isolante térmico selecionado, a temperatura máxima de operação da parede interna, onde as resistências serão instaladas, a temperatura máxima nas paredes sem a fonte de calor instalada, ou seja, várias incógnitas muito importantes na hora da montagem do produto.
 
 A seguir é apresentado em uma tabela algumas constantes consideradas para a primeira análise dessas propriedades. Na qual estão presentes alguns valores necessário para o cálculo das propriedades previstas no parágrafo anterior.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\label{tab_constantes}
 	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/tab_constantes.JPG}
 	\caption{Tabela de propriedades técnicas.}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\label{vol_interno}
 	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/vol_interno.JPG}
@@ -60,11 +47,14 @@ Nesta seção será tratado sobre os mecanismos básicos da condução de calor,
 O cálculo desse fluxo de calor por meio da condução e convecção se dá pelas seguintes fórmulas.
 
 
-************************
+\begin{figure}[!h]
+	\centering
+	\label{form1}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/form1.JPG}
+\end{figure}
 
 
-
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\label{dist_temperatura}
 	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/dist_temperatura.JPG}
@@ -77,44 +67,48 @@ Considerando o primeiro trecho, partindo do interior com 1200ºC até a parede i
 
 Foi considerado as paredes laterais do forno, a base e o topo como tendo resistências, a temperatura nessas paredes, em A1 e A2 será a seguinte.
 
-
-
-****************************
-
-
+\begin{figure}[!h]
+	\centering
+	\label{form2}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/form2.JPG}
+\end{figure}
 
 Além disso foi considerado que as resistências estão igualmente espaçadas nas 4 paredes, ou seja, a potência também será dividida e sendo considerada como 750 W em A1 e A2.
 
-
-******************************
+\begin{figure}[!h]
+	\centering
+	\label{form3}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/form3.JPG}
+\end{figure}
 
 
 As temperaturas nas superfícies A3 (forno e porta), serão consideradas, iguais as temperaturas de operação do forno, para se adquirir um sobre dimensionamento da espessura requerida para os tijolos refratários, então T3 será igual a 1200 ºC. Em outras palavras, foi considerado que não há problema algum de isolamento no fundo e na porta do forno, ou seja, nenhuma energia estaria se dissipando.
 
 Com as temperaturas nas paredes bem definidas, é possível calcular a transferência de calor nos tijolos refratários e nas placas de aço carbono, considerando apenas o fenômeno da condução.
 
-
-
-*********************
-
-
+\begin{figure}[!h]
+	\centering
+	\label{form4}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/form4.JPG}
+\end{figure}
 
  A única variável são as áreas que dependem da seção analisada e a espessura do tijolo. Por vias de uma segurança maior nos cálculos, serão considerados a temperatura na placa externa igual a temperatura no meio ambiente de 27ºC. A equação simplificada para obter Lt é a seguinte.
  
- 
- 
- ***********************
- 
- 
- 
+\begin{figure}[!h]
+	\centering
+	\label{form5}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/form5.JPG}
+\end{figure}
  
 Os cálculos com os subscritos x, são correspondentes com as seções analisadas. Cada uma delas com uma área e diferença de temperaturas diferentes, e consequentemente terão espessuras requeridas diferentes. A Potência correspondente para cada seção será novamente de 750 W devido a uma divisão homogênea dos resistores nas seções consideradas.
  
- 
-***********************
+\begin{figure}[!h]
+	\centering
+	\label{form6}
+	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/form6.JPG}
+\end{figure}
 
-
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\label{tab}
 	\includegraphics[keepaspectratio=true,scale=1.0]{figuras/tab.JPG}
@@ -126,12 +120,6 @@ Devido a todos os tipos de perdas de calor que possam ocorrer, é necessário um
 
 Além disso pode ser acrescentado algum material isolante entre os tijolos e as placas externas de aço, como a vermiculita.
 Por fim, também tem os sulcos que serão feitos nos tijolos para o encaixe das resistências, este fator acarretara uma perca de material refratário, sendo necessário por fins de segurança, um aumento das espessuras calculadas.
-
- 
-\section{Material de Isolamento}
-
-
-\section{Cálculo das Resistências}
 
 \section{Sistema de Alimentação}
 
@@ -149,7 +137,91 @@ Para que o interior do forno de tratamento térmico atinja altas temperaturas (a
 
 Para alcançar a potência desejada de 3kW dimensionou-se as propriedades termodinâmicas no volume de controle do forno.
 
-\subsection{Dimensionamento e Resistência Elétrica}
+Para definir a Potência, julgou-se uma situação de alta quantidade de calor necessária para esquentar um corpo de prova cujo tamanho seja igual ao volume interno do forno e de temperatura de têmpera alta, próxima ao definido pelo escopo do projeto que é um forno que atinja 1200ºC. O material escolhido foi o Aço rápido sinterizado ASP 2017. Segue abaixo a curva de transformação com resfriamento contínuo do aço citado [11].
+\begin{figure}[!h]
+	\centering
+	\label{transf_continuo}
+	\includegraphics[keepaspectratio=true,scale=0.8]{figuras/transf_continuo.JPG}
+	\caption{Curva de transformação com resfriamento contínuo.}
+\end{figure}
+
+\begin{align}
+	T_{temp} = 1180 ºC
+\end{align}
+
+A quantidade de calor necessária para aquecer a temperatura de têmpera do Aço rápido sinterizado ASP 2017 está diretamente relacionada às suas propriedades como Ttemp=1180ºC, sua massa específica p = 8000 kg/m^3 
+
+e seu calor específico c = 420 J/KgºC (Referência) não variando com a Temperatura, pela fórmula abaixo:
+
+\begin{align}
+	Q = \rho * V * c * (T_{temp} - T_{amb})
+\end{align}
+
+Sendo V o volume de aproximadamente 8,28 litros, a	 Tamb=20ºC, substituindo na fórmula temos:
+
+\begin{align}
+Q &= 8*10^{3}*8,28*10^{-3}*420*(1180-20) \\
+\nonumber
+Q &= 32,3 MJ
+\end{align}
+
+A partir dessa proposição e de acordo com a Primeira Lei da Termodinâmica para balanço de energia, e considerando o sistema adiabático de dentro do forno para o meio externo, a quantidade de calor Q é igual ao trabalho elétrico Wel convertido em energia térmica no meio. Sendo assim o balanço de energia se dá como:
+
+\begin{align}
+Q &= W_{el}
+\end{align}
+
+Possuindo o Wel, conseguimos relacionar a Potência necessária para o forno, através da fórmula:
+
+\begin{align}
+P &= \frac{W_{el}}{\Delta t}
+\end{align}
+
+Sendo P a potência e \Delta$ t o tempo em segundos. 
+
+Supondo uma Potência de 3 kW, e achando o tempo necessário:
+
+\begin{align}
+\Delta t &= \frac{W_{el}}{P} = \frac{32,3*10^6}{3*10^3} = 10758seg = 2,98h
+\end{align}
+
+Portanto, para aquecer um corpo de prova em uma situação de alta exigência do forno, o tempo de 3 horas é julgado aceitável para o projeto.
+
+\subsection{Dimensionamento da Resistência Elétrica}
+
+Para calcular a resistência foi utilizada a seguinte fórmula:
+
+\begin{align}
+R = \frac{V^2}{P}
+\end{align}
+
+Em que a tensão utilizada é de 220V e a potência é de 3kW. Feito os cálculos, a resistência encontrada foi de 16,13Ω. Estas serão as condições para calcular a corrente máxima, onde o forno chegará a temperaturas de 1200 °C. Para o material foi escolhido o fio Kanthal A-1(Cr 22\%, Al 5.8\% e Fe 72.2\%), levando em consideração a durabilidade e o alto desempenho desse material. Sabendo que o valor da resistência varia de acordo com a temperatura, é necessário converter essa resistência de acordo com a temperatura ambiente. Para valores de corrente e resistência, utilizou-se a temperatura de 20°C, da seguinte forma:
+
+\begin{align}
+R = \frac{R(T)}{C_T(T)}
+\end{align}
+
+Onde R(T)=16,13Ω e CT(T)=1,04, que é o fator de conversão do material a 1200ºC. Obtendo R20°C=16,78Ω.
+A corrente máxima que passa através do fio é dada por:
+
+\begin{align}
+I_{M\acute{A}X} = \frac{V}{R}
+\end{align}
+
+Utilizando V=220V e R=16,13Ω , obtém-se a corrente máxima de 13,64 A que está dentro da faixa de seguraça definida no projeto. Para escolher o fio mais apropriado que irá suportar essa corrente sem ser sobrecarregado foi calculada a superfície irradiante, que é calculada pela seguinte expressão:
+
+\begin{align}
+S_i = \frac{I_{M\acute{A}X}^{2}*C_T(T)}{\gamma}
+\end{align}
+
+Substituindo IMÁX=13,64A, CT(T)=1,04 e y=2W/cm2(capacidade de condução de corrente), tem-se . Pelas tabelas Kanthal, o fio mais apropriado, cuja superfície irradiante se encontra mais próxima desse valor, é o fio Kanthal A-1 com diâmetro 1,80mm e resistividade de 0,546Ω/m. O comprimento do fio é calculado pela expressão:
+
+\begin{align}
+I= \frac{R_{20 \degree C}}{0,546}
+\end{align}
+\end{align}
+
+O comprimento encontrado foi de 30,73m.
 
 \subsection{Distribuição dos Resistores}
 
@@ -243,8 +315,6 @@ O processo de têmpera é completo após a técnica de resfriamento do material,
 
 A variação da taxa de resfriamento entre água e salmoura é de 27,6\% até 110\% e a diminuição do tempo de resfriamento é de 7,8\% até 63,3\% em relação à agitação. Ar e óleo possui uma severidade muito baixa de tempera e salmoura possui uam severidade mais alta que o ideal. Dessa forma o resultado de têmpera com resfriamento em água gera um aumento de 20\% de martensita na estrutura do aço em relação á tratamento com salmoura. (CARVALHO, 2004)
 
-\section{Termodinânica}
-
 \section{Sistema de Controle}
 
 O sistema de controle do forno será constituído por um conjunto de módulos de hardware e software em malha fechada, ou seja, as informações de saída influenciam no comportamento interno do sistema. O software será responsável pela interação do usuário com o forno, no qual o usuário irá determinar a temperatura de atuação desejada. Já o hardware será responsável por controlar as grandezas do sistema como corrente, tensão, temperatura.
@@ -268,7 +338,7 @@ Por fim, a tensão final é amostrada na entrada do conversor AD, que estará co
 
 Ao fazer o login o usuário irá determinar qual temperatura o forno deverá ser submetido. A Raspberry Pi irá emitir um sinal digital, uma sequência de bits por exemplo, que deverá ser convertido em um sinal analógico, um valor de tensão conforme a curva definida pelo termopar. Para isso deve-se utilizar um conversor D/A, no qual sua saída será encaminhada ao módulo de controle do sistema.
 
-Para manter o sistema na temperatura desejada será utilizado um controlador ON/OFF. De acordo com a tabela (x – CARACTERISTICAS DE TRATAMENTO TÉRMICO DO AÇO), tem-se que a maior variação da temperatura de austenitização é de 40ºC. Essa variação irá definir uma margem de erro, diferença entre o valor máximo e o valor mínimo, que a temperatura deverá se manter. Por exemplo, caso se defina o tratamento para o aço 1040, sua temperatura de austenitização está entre 790ºC e 870ºC, com a margem de erro de 40ºC, a temperatura que o usuário deverá escolher para garantir a têmpera está entre 810ºC e 850ºC. Na figura abaixo foi feito uma simulação de qual resposta se espera do módulo do controlador para uma temperatura de 300ºC.
+Para manter o sistema na temperatura desejada será utilizado um controlador ON/OFF. De acordo com a figura 21, tem-se que a maior variação da temperatura de austenitização é de 40ºC. Essa variação irá definir uma margem de erro, diferença entre o valor máximo e o valor mínimo, que a temperatura deverá se manter. Por exemplo, caso se defina o tratamento para o aço 1040, sua temperatura de austenitização está entre 790ºC e 870ºC, com a margem de erro de 40ºC, a temperatura que o usuário deverá escolher para garantir a têmpera está entre 810ºC e 850ºC. Na figura abaixo foi feito uma simulação de qual resposta se espera do módulo do controlador para uma temperatura de 300ºC.
 
 \begin{figure}[h]
 	\centering
@@ -279,7 +349,7 @@ Para manter o sistema na temperatura desejada será utilizado um controlador ON/
 
 A principal desvantagem do controlador ON/OFF consiste na repetida variação da saída de controle de maneira rápida e bruta, o que pode acarretar no mau funcionamento do sistema. Porém, como o forno demora um tempo considerável para atingir uma temperatura, sabe-se que esse tempo é grande o suficiente para garantir que a repetição da saída de controle será lenta, fazendo com que a saída do controlador seja feita de forma suave.
 
-A saída do controlador irá permitir ou bloquear (ligar ou desligar) a passagem de corrente para o sistema de aquecimento do forno através de um relé. Abaixo pode-se ver o sinal de controle gerado para o mesmo sistema mostrado na figura (\ref{saida_controle}).
+A saída do controlador irá permitir ou bloquear (ligar ou desligar) a passagem de corrente para o sistema de aquecimento do forno através de um relé. Abaixo pode-se ver o sinal de controle gerado para o mesmo sistema mostrado na figura 26.
 
 \begin{figure}[h]
 	\centering
@@ -316,23 +386,23 @@ A metodologia do projeto de software do forno deverá seguir as seguintes práti
 
 As features do sistema de controle do forno térmico serão descritas pela matriz Feature e Benefício (FAB) \cite{safe2015}. Elas descrevem os requisitos funcionais do sistema proposto.
 
-\begin{table}[h]
+\begin{table}[]
 	\centering
 	\label{my-label}
 	\begin{tabular}{|l|l|}
 		\hline
-		\multicolumn{1}{|c|}{\textbf{Features}} & \multicolumn{1}{c|}{\textbf{Benefícios}}                                                                                                                             \\ \hline
-		Cadastro de Usuários                    & Possibilitar o cadastro de quem poderá utilizar o forno.                                                                                                             \\ \hline
-		Sistema de Login                        & Garantir a segurança do sistema, identificando o usuário que utilizará o forno.                                                                                      \\ \hline
-		Seletor de Temperatura                  & Possibilitar ao usuário escolher a temperatura desejada para a realização do experimento.                                                                            \\ \hline
-		Cronômetro                              & \begin{tabular}[c]{@{}l@{}}Informa o tempo decorrido do experimento, o tempo esperado para término e o tempo restante para chegar no\\   esperado.\end{tabular}      \\ \hline
-		Gráfico de Temperatura                  & Apresentar ao usuário em tempo real a variação de temperatura ocorrida dentro do forno.                                                                              \\ \hline
-		Iniciar Processo de Têmpera             & Permitir ao usuário iniciar o processo ao que se dará o experimento.                                                                                                 \\ \hline
-		Histórico de Sessão                     & Salvar relatório dos experimentos anteriormente realizados, e apresentá-los caso solicitados.                                                                        \\ \hline
-		Sistema de Segurança                    & Dispor de um botão-emergência ao qual deverá interromper o processo imediatamente.                                                                                   \\ \hline
-		Informações                             & \begin{tabular}[c]{@{}l@{}}Mostrar informações sobre o processo à de têmpera, assim como as informações necessárias para realização\\   do experimento.\end{tabular} \\ \hline
-		NBRs                                    & Apresentar ao usuário as normas relacionadas ao procedimento e materiais.                                                                                            \\ \hline
-		Estatísticas                            & Por meio dos dados de experimentos anteriores, apresentar estatísticas sobre a utilização do forno.                                                                  \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Features}}                                 & \multicolumn{1}{c|}{\textbf{Benefícios}}                                                                                                                                 \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Cadastro de\\   Usuários\end{tabular}        & \begin{tabular}[c]{@{}l@{}}Possibilitar o cadastro de quem\\   poderá utilizar o forno.\end{tabular}                                                                     \\ \hline
+		Sistema de Login                                                        & \begin{tabular}[c]{@{}l@{}}Garantir a segurança do sistema,\\   identificando o usuário que utilizará o forno.\end{tabular}                                              \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Seletor de\\   Temperatura\end{tabular}      & \begin{tabular}[c]{@{}l@{}}Possibilitar ao usuário escolher a\\   temperatura desejada para a realização do experimento.\end{tabular}                                    \\ \hline
+		Cronômetro                                                              & \begin{tabular}[c]{@{}l@{}}Informa o tempo decorrido do\\   experimento, o tempo esperado para término e o tempo restante para chegar no\\   esperado.\end{tabular}      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Gráfico de\\   Temperatura\end{tabular}      & \begin{tabular}[c]{@{}l@{}}Apresentar ao usuário em tempo\\   real a variação de temperatura ocorrida dentro do forno.\end{tabular}                                      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Iniciar\\   Processo de Têmpera\end{tabular} & \begin{tabular}[c]{@{}l@{}}Permitir ao usuário iniciar o\\   processo ao que se dará o experimento.\end{tabular}                                                         \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Histórico\\   de Sessão\end{tabular}         & \begin{tabular}[c]{@{}l@{}}Salvar relatório dos experimentos\\   anteriormente realizados, e apresentá-los caso solicitados.\end{tabular}                                \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Sistema de\\   Segurança\end{tabular}        & \begin{tabular}[c]{@{}l@{}}Dispor de um botão-emergência ao\\   qual deverá interromper o processo imediatamente.\end{tabular}                                           \\ \hline
+		Informações                                                             & \begin{tabular}[c]{@{}l@{}}Mostrar informações sobre o\\   processo à de têmpera, assim como as informações necessárias para realização\\   do experimento.\end{tabular} \\ \hline
+		NBRs                                                                    & \begin{tabular}[c]{@{}l@{}}Apresentar ao usuário as normas\\   relacionadas ao procedimento e materiais.\end{tabular}                                                    \\ \hline
+		Estatísticas                                                            & \begin{tabular}[c]{@{}l@{}}Por meio dos dados de experimentos\\   anteriores, apresentar estatísticas sobre a utilização do forno.\end{tabular}                          \\ \hline
 	\end{tabular}
-	\caption{Matrix de \textit{Features}}
+	\caption{Matriz de \textit{Features}}
 \end{table}
